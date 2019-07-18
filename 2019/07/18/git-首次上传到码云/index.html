@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://jie163.github.io">
-  <title>重构博客 | zhenjie</title>
+  <title>git 首次上传到码云 | zhenjie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="原来的不能使用，只能重新部署了">
+  <meta name="description" content="1、在码云新建项目仓库。2、在本生成 .git文件夹 1$ git init">
 <meta property="og:type" content="article">
-<meta property="og:title" content="重构博客">
-<meta property="og:url" content="https://jie163.github.io/2019/07/01/重构博客/index.html">
+<meta property="og:title" content="git 首次上传到码云">
+<meta property="og:url" content="https://jie163.github.io/2019/07/18/git-首次上传到码云/index.html">
 <meta property="og:site_name" content="zhenjie">
-<meta property="og:description" content="原来的不能使用，只能重新部署了">
+<meta property="og:description" content="1、在码云新建项目仓库。2、在本生成 .git文件夹 1$ git init">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-01T07:22:39.073Z">
+<meta property="og:updated_time" content="2019-07-18T05:31:38.830Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="重构博客">
-<meta name="twitter:description" content="原来的不能使用，只能重新部署了">
+<meta name="twitter:title" content="git 首次上传到码云">
+<meta name="twitter:description" content="1、在码云新建项目仓库。2、在本生成 .git文件夹 1$ git init">
   
     <link rel="alternative" href="/atom.xml" title="zhenjie" type="application/atom+xml">
   
@@ -154,14 +154,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-重构博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-git-首次上传到码云" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      重构博客
+      git 首次上传到码云
     </h1>
   
 
@@ -172,8 +172,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2019/07/01/重构博客/" class="archive-article-date">
-  	<time datetime="2019-07-01T07:21:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-01</time>
+<a href="/2019/07/18/git-首次上传到码云/" class="archive-article-date">
+  	<time datetime="2019-07-18T03:55:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-18</time>
 </a>
         <!-- 开始添加字数统计-->
                 
@@ -183,8 +183,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>原来的不能使用，只能重新部署了</p>
+        <p>1、在码云新建项目仓库。<br>2、在本生成 .git文件夹</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
 
+<a id="more"></a>
+<p>3、关联远程仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@gitee.com:jie163/test.git</span><br></pre></td></tr></table></figure>
+
+<p>4、将远程仓库的README文件pull下来</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure>
+
+<p>5、将所有代码add一下（后面要加上点）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
+
+<p>6、本次提交的注释</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">"first commit"</span></span><br></pre></td></tr></table></figure>
+
+<p>7、将项目上传远程仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
+
+<p>可以查看当前状态</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
+
+<p>完美结束提交</p>
+<p>常见错误</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">error: failed to push some refs to <span class="string">'git@gitee.com:jie163/test.git'</span></span><br><span class="line">hint: Updates were rejected because the tip of your current branch is behind</span><br><span class="line">hint: its remote counterpart. Merge the remote changes (e.g. <span class="string">'git pull'</span>)</span><br><span class="line">hint: before pushing again.</span><br><span class="line">hint: See the <span class="string">'Note about fast-forwards'</span> <span class="keyword">in</span> <span class="string">'git push --help'</span> <span class="keyword">for</span> details.</span><br></pre></td></tr></table></figure>
+
+<p>解决办法：使用强制push的方法</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master -f</span><br></pre></td></tr></table></figure>
       
 
       
@@ -264,7 +290,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://jie163.github.io/2019/07/01/重构博客/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://jie163.github.io/2019/07/18/git-首次上传到码云/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -278,15 +304,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/07/01/hexo博客添加访问量统计/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          hexo博客添加访问量统计
-        
-      </div>
-    </a>
   
+    <a href="/2019/07/05/hexo更换标签图标/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo更换标签图标</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
